@@ -1,7 +1,7 @@
 name: Testing the GitHub Pages publication
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
