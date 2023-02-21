@@ -9,3 +9,4 @@ plugins:
   - jekyll-seo-tag
 logo: /assets/img/SaraSmirkingInGarden.JPG
 showFooter: false
+github: [metadata]
