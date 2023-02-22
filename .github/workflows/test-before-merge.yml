@@ -34,6 +34,9 @@ jobs:
       - name: Build Jekyll
         run: npm run build
 
+      - name: ensure Cypress tests pass type checking
+        run: npm run type-check:cypress
+
       - name: Start and Run Cypress Test
         uses: cypress-io/github-action@v5
         with:

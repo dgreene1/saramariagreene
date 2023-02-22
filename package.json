@@ -10,7 +10,8 @@
     "start": "http-server _site",
     "start:hard": "npm run clean && npm run build && npm run start",
     "install:ruby": "bundle install",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "type-check:cypress": "tsc -p cypress --noEmit"
   },
   "repository": {
     "type": "git",

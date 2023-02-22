@@ -16,5 +16,10 @@ describe("sanity check", () => {
     cy.get(`.wrapper section .${classForSarasEmailLink} a`)
       .should("have.attr", "href", sarasEmailLinkValue)
       .should("have.text", sarasEmailAddress);
+    cy.get(`#contacts-in-side-nav .twitter-link-w-icon`).should(
+      "have.attr",
+      "href",
+      "https://twitter.com/SaraMariaGreene"
+    );
   });
 });
