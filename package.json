@@ -1,0 +1,33 @@
+{
+  "name": "saramariagreene",
+  "version": "1.0.0",
+  "description": "Sara Maria Greene is a writer of fiction",
+  "main": "not applicable",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf _site",
+    "build": "bundle exec jekyll build",
+    "start": "http-server _site",
+    "start:hard": "npm run clean && npm run build && npm run start",
+    "install:ruby": "bundle install",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgreene1/saramariagreene.git"
+  },
+  "author": "Dan Greene",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dgreene1/saramariagreene/issues"
+  },
+  "homepage": "https://github.com/dgreene1/saramariagreene#readme",
+  "dependencies": {
+    "rimraf": "^4.1.2"
+  },
+  "devDependencies": {
+    "cypress": "^12.6.0",
+    "http-server": "^14.1.1",
+    "typescript": "^4.9.5"
+  }
+}
