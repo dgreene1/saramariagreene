@@ -2,12 +2,12 @@
 
 ## How to update it
 
-1. check out the main branch ( ie. `git checkout main`)
+1. Check out the main branch ( ie. `git checkout main`)
 2. `git fetch`
-3. make a pr branch (ie. `git checkout -b some-branch-name` )
-4. add, commit, push changes
-5. you can see what the changes look like by viewing the Cypress tests in https://cloud.cypress.io/projects/v3hpjk/runs
-6. merge the PR and it will automatically go to the gh-pages branch which then updates the actually hosted website
+3. Make a pr branch (ie. `git checkout -b some-branch-name` )
+4. Add, commit, push changes
+5. You can see what the changes look like by viewing the Cypress tests in https://cloud.cypress.io/projects/v3hpjk/runs
+6. Merge the PR and it will automatically go to the gh-pages branch which then updates the actually hosted website
 
 # The Minimal theme
 
