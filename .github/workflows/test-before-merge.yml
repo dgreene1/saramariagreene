@@ -40,3 +40,7 @@ jobs:
           start: npm start
           # quote the url to be safe against YML parsing surprises
           wait-on: "http://localhost:8080"
+          record: true
+        env:
+          # pass the Cypress Cloud record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
