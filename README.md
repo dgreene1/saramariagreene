@@ -1,8 +1,19 @@
+# Sara's Portfolio
+
+## How to update it
+
+1. check out the main branch ( ie. `git checkout main`)
+2. `git fetch`
+3. make a pr branch (ie. `git checkout -b some-branch-name` )
+4. add, commit, push changes
+5. you can see what the changes look like by viewing the Cypress tests in https://cloud.cypress.io/projects/v3hpjk/runs
+6. merge the PR and it will automatically go to the gh-pages branch which then updates the actually hosted website
+
 # The Minimal theme
 
 [![.github/workflows/ci.yaml](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
 
-*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
+_Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage)._
 
 ![Thumbnail of Minimal](thumbnail.png)
 
@@ -12,17 +23,17 @@ To use the Minimal theme:
 
 1. Add the following to your site's `_config.yml`:
 
-    ```yml
-    remote_theme: pages-themes/minimal@v0.2.0
-    plugins:
-    - jekyll-remote-theme # add this line to the plugins list if you already have one
-    ```
+   ```yml
+   remote_theme: pages-themes/minimal@v0.2.0
+   plugins:
+     - jekyll-remote-theme # add this line to the plugins list if you already have one
+   ```
 
 2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+   ```ruby
+   gem "github-pages", group: :jekyll_plugins
+   ```
 
 ## Customizing
 
@@ -48,22 +59,24 @@ If you'd like to add your own custom styles:
 
 1. Create a file called `/assets/css/style.scss` in your site
 2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
 
-    @import "{{ site.theme }}";
-    ```
+   ```scss
+   ---
+   ---
+
+   @import "{{ site.theme }}";
+   ```
+
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+_Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet._
 
 ### Layouts
 
 If you'd like to change the theme's HTML layout:
 
 1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/minimal/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html).
-2. For more extensive changes, [copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+2. For more extensive changes, [copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(_Pro-tip: click "raw" to make copying easier_)
 3. Create a file called `/_layouts/default.html` in your site
 4. Paste the default layout content copied in the first step
 5. Customize the layout as you'd like
@@ -78,14 +91,14 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
 
 1. Look at [the template source](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
 2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
+   ```yml
+   github:
+     zip_url: http://example.com/download.zip
+     another_url: another value
+   ```
 3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+_Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`._
 
 For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
 
