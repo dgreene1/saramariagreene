@@ -4,6 +4,7 @@ repository: dgreene1/saramariagreene
 google_analytics:
 theme: jekyll-theme-minimal
 remote_theme: pages-themes/minimal@v0.2.0
+baseurl:
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
