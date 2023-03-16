@@ -21,5 +21,9 @@ describe("sanity check", () => {
       "href",
       "https://twitter.com/SaraMariaGreene"
     );
+    // Take screenshots so we can see what the page looks like in Cypress Cloud before we deploy
+    cy.screenshot();
+    cy.scrollTo('bottom');
+    cy.screenshot();
   });
 });
