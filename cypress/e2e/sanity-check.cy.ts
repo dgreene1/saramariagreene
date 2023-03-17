@@ -22,8 +22,15 @@ describe("sanity check", () => {
       "https://twitter.com/SaraMariaGreene"
     );
     // Take screenshots so we can see what the page looks like in Cypress Cloud before we deploy
-    cy.screenshot('top of page');
-    cy.scrollTo('bottom');
-    cy.screenshot('bottom of page');
+    cy.screenshot("top of page", {
+      capture: "viewport",
+    });
+    cy.scrollTo("bottom");
+    cy.screenshot("bottom of page", {
+      capture: "viewport",
+    });
+    cy.screenshot("full page", {
+      capture: "fullPage",
+    });
   });
 });
