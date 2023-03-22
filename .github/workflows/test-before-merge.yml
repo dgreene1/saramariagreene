@@ -34,6 +34,9 @@ jobs:
       - name: Build Jekyll
         run: npm run build
 
+      - name: Custom Markdown Linter
+        run: npm run lint:custom-md
+
       - name: ensure Cypress tests pass type checking
         run: npm run type-check:cypress
 
