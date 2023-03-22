@@ -8,6 +8,7 @@
     "clean": "rimraf _site",
     "build": "bundle exec jekyll build",
     "start": "http-server _site",
+    "lint:custom-md": "node customLinter.js",
     "start:hard": "npm run clean && npm run build && npm run start",
     "install:ruby": "bundle install",
     "cypress:open": "cypress open",
