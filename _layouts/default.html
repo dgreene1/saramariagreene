@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      hr.divider {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
 
 {% seo %}
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
@@ -24,8 +30,13 @@
         {% endif %}
 
         <div id="contacts-in-side-nav">
-          <div class="email-element"></div>
-          <a href="https://twitter.com/SaraMariaGreene" class="twitter-link-w-icon"><img src="{{site.twitterIcon | relative_url}}" style="height: 1rem;vertical-align: middle; padding-right: 0.3rem;">@SaraMariaGreene</a>
+          <hr class="divider">
+          <div id="home-link-in-sidenav"><a href="/">Home</a></div>
+          <hr class="divider">
+          <div id="awards-link-in-sidenav"><a href="/awards-and-honors">Publications, Awards, and Honors</a></div>
+          <hr class="divider">
+          <div id="contact-link-in-sidenav"><a href="/contact">Contact</a></div>
+          <hr class="divider">
         </div>
 
         <!-- <p>{{ site.description | default: site.github.project_tagline }}</p> -->
