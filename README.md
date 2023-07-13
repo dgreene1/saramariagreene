@@ -6,7 +6,7 @@
 2. `git fetch`
 3. Make a pr branch (ie. `git checkout -b some-branch-name` )
 4. Add, commit, push changes
-5. You can see what the changes look like by viewing the Cypress tests in https://cloud.cypress.io/projects/v3hpjk/runs
+5. You can see what the changes look like by (a) locally running `npm run clean; npm run build; npm run start` or (b) viewing the Cypress tests in https://cloud.cypress.io/projects/v3hpjk/runs
 6. Merge the PR and it will automatically go to the gh-pages branch which then updates the actually hosted website
 
 # The Minimal theme
