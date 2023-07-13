@@ -8,5 +8,5 @@ DO NOT JUST COPY/PASTE IN HERE because it will undo the email obfuscation code y
 
 ## Contact
 
-{::nomarkdown}Email: <span class="email-element"></span>{:/nomarkdown}
-{::nomarkdown}Twitter: <a href="https://twitter.com/SaraMariaGreene" class="twitter-link-w-icon"><img src="{{site.twitterIcon | relative_url}}" style="height: 1rem;vertical-align: middle; padding-right: 0.3rem;">@SaraMariaGreene</a>{:/nomarkdown}
+{::nomarkdown}<div>Email: <span class="email-element"></span></div>{:/nomarkdown}
+{::nomarkdown}<div>Twitter: <a href="https://twitter.com/SaraMariaGreene" class="twitter-link-w-icon"><img src="{{site.twitterIcon | relative_url}}" style="height: 1rem;vertical-align: middle; padding-right: 0.3rem;">@SaraMariaGreene</a></div>{:/nomarkdown}
