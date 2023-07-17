@@ -14,29 +14,31 @@ describe("sanity check", () => {
       "are we making sure that every link will scroll the user down to the section when we're in mobile (so that the image doesn't take up all of the screen)?"
     );
     cy.get("#side-nav-links").each((el) => {
-      cy.wrap(el).find("a").should("have.attr", "href", `#${sectionTagId}`);
+      expect(el.find("a"))
+        .to.have.attr("href")
+        .and.contains(`#${sectionTagId}`);
     });
     cy.get("h1").should("have.text", titleOfWebsite);
     cy.log("Are we on the right page?");
     cy.get("h2").should("have.text", "About the Author");
     // Take screenshots so we can see what the page looks like in Cypress Cloud before we deploy
     cy.screenshot("top of homepage");
-    cy.scrollTo("bottom");
+    cy.scrollTo("bottom", { ensureScrollable: false });
     cy.screenshot("bottom of homepage");
-    cy.scrollTo("top");
+    cy.scrollTo("top", { ensureScrollable: false });
     // Next page
-    cy.log("Let's see if we can get to the contact page");
-    cy.get("#awards-link-in-sidenav").click();
+    cy.log("Let's see if we can get to the awards page");
+    cy.get("#awards-link-in-sidenav").find("a").click();
     cy.log("Are we on the right page after we moved to a child page?");
     cy.get("h2").should("have.text", "Publications, Awards, and Honors");
     // Take screenshots so we can see what the page looks like in Cypress Cloud before we deploy
     cy.screenshot("top of awards page");
-    cy.scrollTo("bottom");
+    cy.scrollTo("bottom", { ensureScrollable: false });
     cy.screenshot("bottom of awards page");
-    cy.scrollTo("top");
+    cy.scrollTo("top", { ensureScrollable: false });
     // Next page
     cy.log("Let's see if we can get to the contact page");
-    cy.get("#contact-link-in-sidenav").click();
+    cy.get("#contact-link-in-sidenav").find("a").click();
     cy.log("Are we on the right page after we moved to a child page?");
     cy.get("h2").should("have.text", "Contact");
     cy.log("check the email link in the contact content area");
@@ -50,13 +52,13 @@ describe("sanity check", () => {
     );
     // Take screenshots so we can see what the page looks like in Cypress Cloud before we deploy
     cy.screenshot("top of contacts page");
-    cy.scrollTo("bottom");
+    cy.scrollTo("bottom", { ensureScrollable: false });
     cy.screenshot("bottom of contacts page");
-    cy.scrollTo("top");
+    cy.scrollTo("top", { ensureScrollable: false });
 
     // Next Page
     cy.log("Let's verify the home page LINK too");
-    cy.get("#home-link-in-sidenav").click();
+    cy.get("#home-link-in-sidenav").find("a").click();
     cy.get("h1").should("have.text", titleOfWebsite);
     cy.log("Are we on the right page?");
     cy.get("h2").should("have.text", "About the Author");
