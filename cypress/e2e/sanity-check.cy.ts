@@ -1,3 +1,14 @@
+const checkAllLinksOnPageForDeadness = () => {
+  cy.get("a").each((link) => {
+    const hrefValue = link.prop("href");
+    if (hrefValue)
+      cy.request({
+        url: hrefValue,
+        failOnStatusCode: false,
+      });
+  });
+};
+
 describe("sanity check", () => {
   const screenTypes: Cypress.ViewportPreset[] = ["macbook-15", "iphone-xr"];
 
@@ -26,28 +37,33 @@ describe("sanity check", () => {
 
       cy.log("Are we on the right page?");
       cy.get("h2").should("have.text", "About the Author");
+      checkAllLinksOnPageForDeadness();
       // Take screenshots so we can see what the page looks like in Cypress Cloud before we deploy
       cy.scrollTo("top", { ensureScrollable: false });
       cy.screenshot(`${screenType} - top of homepage`);
       cy.scrollTo("bottom", { ensureScrollable: false });
       cy.screenshot(`${screenType} - bottom of homepage`);
       cy.scrollTo("top", { ensureScrollable: false });
+
       // Next page
       cy.log("Let's see if we can get to the awards page");
       cy.get("#awards-link-in-sidenav").find("a").click();
       cy.log("Are we on the right page after we moved to a child page?");
       cy.get("h2").should("have.text", "Publications, Awards, and Honors");
+      checkAllLinksOnPageForDeadness();
       // Take screenshots so we can see what the page looks like in Cypress Cloud before we deploy
       cy.scrollTo("top", { ensureScrollable: false });
       cy.screenshot(`${screenType} - top of awards page`);
       cy.scrollTo("bottom", { ensureScrollable: false });
       cy.screenshot(`${screenType} - bottom of awards page`);
       cy.scrollTo("top", { ensureScrollable: false });
+
       // Next page
       cy.log("Let's see if we can get to the contact page");
       cy.get("#contact-link-in-sidenav").find("a").click();
       cy.log("Are we on the right page after we moved to a child page?");
       cy.get("h2").should("have.text", "Contact");
+      checkAllLinksOnPageForDeadness();
       cy.log("check the email link in the contact content area");
       cy.get(`.wrapper section .${classForSarasEmailLink} a`)
         .should("have.attr", "href", sarasEmailLinkValue)
@@ -70,6 +86,10 @@ describe("sanity check", () => {
       cy.get("h1").should("have.text", titleOfWebsite);
       cy.log("Are we on the right page?");
       cy.get("h2").should("have.text", "About the Author");
+      checkAllLinksOnPageForDeadness();
+
+      // Next Page
+      // TBD
     });
   });
 });
