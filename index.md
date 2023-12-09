@@ -8,11 +8,13 @@ DO NOT JUST COPY/PASTE IN HERE because it will undo the email obfuscation code y
 
 ## About the Author
 
-Sara Maria Greene is a fiction writer living outside of Philadelphia.
+Sara Maria Greene is a fiction writer living outside of Philadelphia with her husband, young daughter, and an emotionally unavailable cat.
 
-She is actively seeking agent representation. Please send any requests for more information to {::nomarkdown}<span class="email-element">TBD</span>{:/nomarkdown}.
+She is actively seeking agent representation. Please send any requests for more information to {::nomarkdown}<span class="email-element">TBD</span>{:/nomarkdown}.
 
-She is currently working on _This Will Be Yours When I Die,_ twenty interconnected short stories featuring women exploring the depths of the female experience with a mix of dark humor, fairy tales, and pleasant absurdity. Fans of Raphael Bob Waksberg, Jenny Slate, and Jenny Offhill will appreciate the whiffs of magical realism and bittersweet nostalgia in the work. Fans of Shirley Jackson, Sarah Shun-lien Bynum, and Rachel Yoder will appreciate the sharper edges that cut to the meat of what it means to be human. The complete manuscript is available upon request.
+She has been published internationally in four different countries and has placed in several literary contests—most recently as a semifinalist for the Pamet River prize for her entire collection of work. In November of 2023, she was nominated for a Pushcart Prize by the publisher Sans. Press.
+
+She is seeking representation and publication for _This Will Be Yours When I Die,_ a collection of short stories featuring women exploring the depths of the female experience with a mix of dark humor, fairy tales, and pleasant absurdity. Fans of Raphael Bob Waksberg, Jenny Slate, and Jenny Offhill will appreciate the whiffs of magical realism and bittersweet nostalgia in the work. Fans of Shirley Jackson, Sarah Shun-lien Bynum, and Rachel Yoder will appreciate the sharper edges that cut to the meat of what it means to be human. The complete manuscript is available upon request.
 
 Sara has a Bachelor’s degree in English Literature and Creative Writing from King’s College.
 
