@@ -10,6 +10,9 @@ DO NOT JUST COPY/PASTE IN HERE because it will undo the email obfuscation code y
 
 ### Publications
 
+[“Coffee”](https://www.sanspress.com) – Sans. Press, Another Name for Darkness Anthology, December
+2023
+
 [“The Mother Witch,”](https://roommagazine.com/fiction-contest-2022-the-winners/) Room Magazine, Issue 46.3, October 2023
 
 [“Parapsychology,”](https://slipperyelm.findlay.edu/announcing-2023-prose-finalists/) Slippery Elm Journal, 2023 Print Edition
@@ -26,6 +29,10 @@ DO NOT JUST COPY/PASTE IN HERE because it will undo the email obfuscation code y
 Literature: Volume 1, Edited by Jennifer McClinton-Temple, Facts on File, Inc., December 1, 2010
 
 ### Awards and Honors
+
+Pushcart Prize Nominee - Sans. Press 2023
+
+Semifinalist - The Pamet River Prize, YesYes Books 2023
 
 Second Place Winner - Room Magazine Short Fiction Contest 2022
 
