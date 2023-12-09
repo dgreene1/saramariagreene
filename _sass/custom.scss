@@ -1,0 +1,6 @@
+// NOTE: there are other custom code that is sprinkled throughout the SCSS files, but...
+//      ...I've started trying to keep them here to avoid issues when updating the theme
+
+img[alt="example1"] {
+    max-height: 50vh;
+}
