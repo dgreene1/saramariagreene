@@ -30,7 +30,13 @@ Literature: Volume 1, Edited by Jennifer McClinton-Temple, Facts on File, Inc., 
 
 ### Awards and Honors
 
-Pushcart Prize Nominee - Sans. Press 2023
+Semifinalist - Kevin McIlvoy Book Prize, WTAW Press 2025
+
+Semifinalist - Autumn House Fiction Prize 2025
+
+Longlist - Virginia Woolf Award for Short Fiction, LitMag 2025
+
+[Pushcart Prize Nominee - Sans. Press 2023](https://x.com/PressSans/status/1729528827737772119)
 
 Semifinalist - The Pamet River Prize, YesYes Books 2023
 
